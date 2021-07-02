@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Questao extends StatelessWidget {
@@ -8,6 +9,13 @@ class Questao extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(texto);
+    return Container(
+     width: double.infinity,
+      margin: EdgeInsets.all(10),
+      child: Text(texto,
+      style: TextStyle(fontSize: 28),
+       textAlign: TextAlign.center,
+      ),
+    );
   }
 }
